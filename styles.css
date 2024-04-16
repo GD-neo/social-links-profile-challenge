@@ -1,0 +1,233 @@
+* { 
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body { 
+    padding: 0;
+    margin: 0;
+}
+
+/* create root for the colors  */
+:root { 
+    --primarywhite: hsl(0, 0%, 100%);
+    --primarygrey: hsl(0, 0%, 20%);
+    --primarydarkgrey: hsl(0, 0%, 12%);
+    --primaryoffblack: hsl(0, 0%, 8%);
+
+    --primarygreen: hsl(75, 94%, 57%);
+}
+
+p, a, h1, h2, h3, h4, h5, h6 { 
+    font-family: "Inter";
+}
+
+h1 { 
+    color: var(--primarywhite);
+    font-weight: 600;
+    font-size: 24px;
+    /* margin: 0; */
+    margin-top: 27px;
+}
+
+h3 { 
+    color: var(--primarygreen);
+    font-size: 14px;
+    margin-top: 9px;
+}
+
+p { 
+    color: var(--primarywhite);
+    font-weight: 400;
+    font-size: 14px;
+    margin-top: 28px;
+}
+
+main { 
+    height: 100vh; 
+    width: 100%;
+    background-color: var(--primaryoffblack);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.linksProfile { 
+    width: 380px;
+    height: 610px;
+    background-color: var(--primarydarkgrey);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    align-items: center;
+    /* box-sizing: border-box; */
+    padding: 40px 30px 39px 30px;
+}
+
+.imageUser { 
+    border-radius: 100%;
+    overflow: hidden;
+    /* width: 30px; */
+    width: 89px;
+    height: 89px;
+}
+
+.image { 
+    width: 100%;
+    /* height: auto; */
+}
+
+.links { 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 289px;
+    width: 100%;
+    margin-top: 26px;
+    /* margin-bottom: 0px; */
+}
+
+.links a { 
+    width: 100%;
+    height: 45px;
+    background-color: var(--primarygrey);
+    border-radius: 7px;
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--primarywhite);
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.links a:hover, .links a:active { 
+    background-color: var(--primarygreen);
+    color: var(--primaryoffblack);
+    transition: color 0.5s ease-in-out;
+    transition: background-color 0.5s ease-in-out;
+}
+
+@media (max-width:800px){
+    h1 { 
+        font-weight: 600;
+        font-size: 24px;
+        /* margin: 0; */
+        margin-top: 27px;
+    }
+    
+    h3 { 
+        font-size: 14px;
+        margin-top: 9px;
+    }
+    
+    p { 
+        font-weight: 400;
+        font-size: 14px;
+        margin-top: 28px;
+    }
+    
+    main { 
+        height: 100vh; 
+        width: 100%;
+    }
+    .linksProfile { 
+        width: 326px;
+        height: 578px;
+        border-radius: 12px;
+        /* justify-content: space-between; */
+        /* box-sizing: border-box; */
+        padding: 23px 23px 21px 23px;
+    }
+    
+    .imageUser { 
+        border-radius: 100%;
+        overflow: hidden;
+        /* width: 30px; */
+        width: 89px;
+        height: 89px;
+    }
+    
+    .image { 
+        width: 100%;
+        /* height: auto; */
+    }
+    
+    .links { 
+        height: 289px;
+        width: 100%;
+        margin-top: 26px;
+        /* margin-bottom: 0px; */
+    }
+    
+    .links a { 
+        height: 45px;
+        border-radius: 7px;
+        font-weight: 600;
+        font-size: 14px;
+    }
+       
+    
+}
+
+@media (max-width: 355px){
+    h1 { 
+        font-weight: 600;
+        font-size: 24px;
+        /* margin: 0; */
+        margin-top: 16px;
+    }
+    
+    h3 { 
+        font-size: 14px;
+        margin-top: 4px;
+    }
+    
+    p { 
+        font-weight: 400;
+        font-size: 12px;
+        margin-top: 10px;
+    }
+    
+    main { 
+        height: 100vh; 
+        width: 100%;
+    }
+    .linksProfile { 
+        width: 290px;
+        height: 450px;
+        border-radius: 12px;
+        /* justify-content: space-between; */
+        /* box-sizing: border-box; */
+        padding: 20px;
+    }
+    
+    .imageUser { 
+        border-radius: 100%;
+        overflow: hidden;
+        /* width: 30px; */
+        width: 90px;
+        height: 90px;
+        /* margin-top: 17px; */
+    }
+    
+    .image { 
+        width: 100%;
+        /* height: auto; */
+    }
+    
+    .links { 
+        height: 310px;
+        width: 100%;
+        margin-top: 26px;
+        /* margin-bottom: 0px; */
+    }
+    
+    .links a { 
+        height: 35px;
+        border-radius: 7px;
+        font-weight: 600;
+        font-size: 14px;
+    }
+}
