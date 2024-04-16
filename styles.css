@@ -231,3 +231,15 @@ main {
         font-size: 14px;
     }
 }
+
+footer { 
+    background-color: var(--primaryoffblack);
+    color: var(--primarygreen);
+    display: flex;
+    justify-content: center;
+}
+
+footer a { 
+    text-decoration: none;
+    color: var(--primarygreen);
+}
